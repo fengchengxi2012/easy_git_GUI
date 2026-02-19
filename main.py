@@ -19,6 +19,9 @@ COLORS = {
     'border': '#dee2e6'          # 边框颜色
 }
 
+# 先定义全局变量
+side = 'github'
+
 def showmenu(event):
     menu.post(event.x_root, event.y_root)
 
@@ -201,6 +204,7 @@ platform_label = ttk.Label(platform_card, text="Current Platform:",
                           style='Heading.TLabel')
 platform_label.place(x=15, y=15)
 
+# 修复：这里语法错误，应该用 textvariable 或 text 参数
 platform_value = ttk.Label(platform_card, text=side, 
                           font=("Arial", 11, "bold"),
                           foreground=COLORS['primary'],
