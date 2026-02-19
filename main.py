@@ -5,7 +5,6 @@ import requests
 import webbrowser
 import pyperclip  # You need to install this: pip install pyperclip
 
-a=1
 
 def showmenu(event):
     menu.post(event.x_root, event.y_root)
