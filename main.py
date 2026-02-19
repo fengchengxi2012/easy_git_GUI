@@ -3,7 +3,7 @@ from tkinter import ttk
 from tkinter import messagebox
 import requests
 import webbrowser
-import pyperclip  # You need to install this: pip install pyperclip
+import pyperclip
 
 
 def showmenu(event):
